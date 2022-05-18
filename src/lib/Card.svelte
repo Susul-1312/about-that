@@ -12,6 +12,9 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
     .box {
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
         padding: 1em;
         border-radius: 1em;
         background-color: #050505;
