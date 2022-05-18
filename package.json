@@ -13,5 +13,8 @@
     "@tsconfig/svelte": "^3.0.0",
     "svelte": "^3.44.0",
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
   }
 }

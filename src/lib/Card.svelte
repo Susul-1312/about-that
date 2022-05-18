@@ -1,13 +1,33 @@
 <script>
     export let title;
-    export let imageURL = null;
-    export let imageAlt = null;
 </script>
 
 <div class="box">
-    <h1>{title}</h1>
-    {#if imageURL}
-        <img src={imageURL} alt={imageAlt || "No alt text was provided"} />
-    {/if}
-    <slot></slot>
+    <table>
+    <td class="title">{title}</td>
+    <td class="content"><slot></slot></td>
+</table>
 </div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    .box {
+        padding: 1em;
+        border-radius: 1em;
+        background-color: #050505;
+        color: white;
+        font-family: Raleway, sans-serif;
+    }
+
+    .title {
+        vertical-align: middle;
+        width: 20%;
+        font-size: 3em;
+    }
+
+    .content {
+        vertical-align: middle;
+        font-size: 1.5em;
+        width: 80%;
+    }
+</style>
