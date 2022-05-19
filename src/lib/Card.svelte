@@ -25,6 +25,7 @@
 
 	.box {
 		width: 90%;
+		margin: 0 auto;
 		margin-top: 1em;
 		padding: 1em;
 		border-radius: 1em;
