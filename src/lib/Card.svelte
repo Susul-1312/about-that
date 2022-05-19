@@ -5,8 +5,8 @@
 
 <div class="box">
 	<table>
-		<td class="title"><div>{title}</div></td>
-		<td class="content"><div><slot /></div></td>
+		<td class="title">{title}</td>
+		<td class="content"><slot /></td>
 	</table>
 	<time datetime={date.toISOString()}
 		>{date.toLocaleDateString(undefined, {
@@ -21,7 +21,7 @@
 </div>
 
 <style>
-	@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
 	.box {
 		width: 90%;
@@ -43,5 +43,11 @@
 		vertical-align: middle;
 		font-size: 1.5em;
 		width: 80%;
+	}
+
+	time {
+		font-size: 0.8em;
+		color: #aaa;
+		font-family: 'Roboto Mono', monospace;
 	}
 </style>
