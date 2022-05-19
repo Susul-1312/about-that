@@ -11,7 +11,8 @@
             content: Array(Math.floor(Math.random() * 300)).fill(null).map(() => String.fromCharCode(Math.floor(Math.random()*25) + 97)).join(" ")
         }})
 
-        console.log(cards)
+        // Sort cards by timestamp, most recent first
+		cards.sort((a, b) => b.timestamp - a.timestamp);
 	}
 
 	refresh();
