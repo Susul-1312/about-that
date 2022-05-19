@@ -5,8 +5,8 @@
 
 <div class="box">
 	<table>
-		<td class="title">{title}</td>
-		<td class="content"><slot /></td>
+		<td class="title"><div>{title}</div></td>
+		<td class="content"><div><slot /></div></td>
 	</table>
 	<time datetime={date.toISOString()}
 		>{date.toLocaleDateString(undefined, {
@@ -25,7 +25,6 @@
 
 	.box {
 		width: 90%;
-		margin: auto;
 		margin-top: 1em;
 		padding: 1em;
 		border-radius: 1em;
