@@ -8,7 +8,7 @@
             return {
             timestamp: Math.floor(Math.random() * Date.now()),
             title: (Math.random() + 1).toString(36).substring(2),
-            content: Array(Math.floor(Math.random() * 300)).fill(null).map(() => String.fromCharCode(Math.floor(Math.random()*25) + 97)).join(" ")
+            content: Array(Math.floor(Math.random() * 100)+ 110).fill(null).map(() => String.fromCharCode(Math.floor(Math.random()*25) + 97)).join(" ")
         }})
 
         // Sort cards by timestamp, most recent first
