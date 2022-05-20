@@ -1,21 +1,20 @@
 <script>
-	import Card from "./lib/Card.svelte";
+	import Card from './lib/Card.svelte';
+	// @ts-ignore
+	import { browser } from '$app/env';
 
 	let cards = [];
 
 	async function refresh() {
-		cards = Array(20).fill(null).map(function() {
-            return {
-            timestamp: Math.floor(Math.random() * Date.now()),
-            title: (Math.random() + 1).toString(36).substring(2),
-            content: Array(Math.floor(Math.random() * 100)+ 110).fill(null).map(() => String.fromCharCode(Math.floor(Math.random()*25) + 97)).join(" ")
-        }})
+		if (!browser) return;
 
-        // Sort cards by timestamp, most recent first
+		cards = await fetch('/cards').then((r) => r.json());
+
+		// Sort cards by timestamp, most recent first
 		cards.sort((a, b) => b.timestamp - a.timestamp);
 	}
 
-	refresh();
+	setInterval(refresh, 1000);
 </script>
 
 {#each cards as { title, content, timestamp }}
