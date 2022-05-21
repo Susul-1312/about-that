@@ -97,6 +97,6 @@ const cards = [
     }
 ]
 
-export async function get({params}) {
+export async function get({}) {
     return {status: 200, body: cards}
 }
