@@ -4,8 +4,7 @@
 
 <footer>
     <a href="/"><img alt="About That Logo" src={`${assets}/favicon.png`} /></a>
-	<p>Test</p>
-	<p>test</p>
+	<p>Copyright &copy; 2022 Susul</p>
 </footer>
 
 <style lang="scss">
