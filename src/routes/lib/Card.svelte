@@ -27,8 +27,6 @@
 </div>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono:wght@300&display=swap');
-
 	.box {
 		width: 90%;
 		margin: 0 auto;
