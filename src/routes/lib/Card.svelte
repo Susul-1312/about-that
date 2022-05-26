@@ -1,6 +1,12 @@
 <script>
-	export let title;
-	export let date;
+	export /**
+	 * @type {String}
+	 */
+	let title;
+	export /**
+	 * @type {Date}
+	 */
+	let date;
 </script>
 
 <div class="box">
@@ -10,12 +16,12 @@
 	</table>
 	<time datetime={date.toISOString()}
 		>{date.toLocaleDateString(undefined, {
-			weekday: "long",
-			year: "numeric",
-			month: "long",
-			day: "numeric",
-			hour: "2-digit",
-			minute: "2-digit",
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			hour: '2-digit',
+			minute: '2-digit'
 		})}</time
 	>
 </div>

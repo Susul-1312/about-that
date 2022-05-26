@@ -98,5 +98,5 @@ const cards = [
 ]
 
 export async function get({}) {
-    return {status: 200, body: cards}
+    return {status: 200, body: {cards}}
 }

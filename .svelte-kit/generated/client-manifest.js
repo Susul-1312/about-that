@@ -8,6 +8,6 @@ export const components = [
 ];
 
 export const dictionary = {
-	"": [[0, 2], [1]],
+	"": [[0, 2], [1], 1],
 	"lib/Card": [[0, 3], [1]]
 };
