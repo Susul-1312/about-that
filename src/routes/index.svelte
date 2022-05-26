@@ -1,5 +1,6 @@
 <script>
 	import Card from './lib/Card.svelte';
+	import Footer from './lib/Footer.svelte';
 	// @ts-ignore
 	import { browser } from '$app/env';
 
@@ -25,3 +26,5 @@
 {#each cards as { title, content, timestamp }}
 	<Card {title} date={new Date(timestamp)}>{content}</Card>
 {/each}
+
+<Footer />

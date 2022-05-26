@@ -1,4 +1,4 @@
-const cards = [
+let cards = [
     {
         "title": "An interesting Title",
         "content": "Things have indeed happened recently. I ate some pie. It was really good",
@@ -15,6 +15,8 @@ const cards = [
         "timestamp": 7974810000
     }
 ]
+
+cards = [...cards, ...cards, ...cards]
 
 export async function get({}) {
     return {status: 200, body: {cards}}
